@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalquote</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<div class="max-w-6xl mx-auto flex justify-end py-4 px-6 bg-white rounded-t-lg shadow">
+  <!-- Right: User Info -->
+  <div class="flex items-center gap-3 cursor-pointer">
+    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-700" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+      </svg>
+    </div>
+    <div class="text-right">
+      <p class="font-semibold text-gray-800 leading-tight">Shubham S</p>
+      <p class="text-sm text-gray-500 leading-tight">Sales representative</p>
+    </div>
+    <!-- Dropdown Arrow -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </div>
+</div>
+
+<!-- Top Navigation Bar -->
+<div class="bg-gray-100 py-6 px-3">
+  <div class="max-w-5xl mx-auto flex items-center justify-between bg-white rounded-full px-6 py-4 shadow">
+    <!-- Left: Back Arrow + iSecure -->
+    <div class="flex items-center space-x-3 text-blue-600 font-semibold text-lg cursor-pointer">
+      <!-- Back Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      <span>iSecure</span>
+    </div>
+
+    <!-- Right: Select a new product -->
+    <div class="flex items-center space-x-3 text-blue-600 font-medium text-base cursor-pointer">
+      <!-- Refresh Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v6h6M20 20v-6h-6M5 19a9 9 0 0114-7.5M19 5a9 9 0 00-14 7.5" />
+      </svg>
+      <span>Select a new product</span>
+    </div>
+  </div>
+</div>
+<br>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-6xl mx-auto bg-white p-6 rounded-lg shadow">
+    <div class="flex items-center justify-between bg-blue-50">
+      <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-700" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+        </svg>
+      </div>
+      <h2 class="text-xl font-semibold">Claudius C.</h2>
+      <div class="flex flex-wrap gap-2 mt-2">
+        <span class="bg-white px-2 py-1 rounded shadow text-sm text-gray-600">35 M</span>
+        <span class="bg-white px-2 py-1 rounded shadow text-sm text-gray-600">Life shield</span>
+        <span class="bg-white px-2 py-1 rounded shadow text-sm text-gray-600">Lum sum layout</span>
+        <span class="bg-white px-2 py-1 rounded shadow text-sm text-gray-600">Covered Till 75</span>
+        <span class="bg-white px-2 py-1 rounded shadow text-sm text-gray-600">Graduate and above</span>
+        <span class="bg-white px-2 py-1 rounded shadow text-sm text-gray-600">Salaried</span>
+        <span class="bg-white px-2 py-1 rounded shadow text-sm text-gray-600">10 LPA</span>
+      </div>
+      <button class="flex items-center gap-2 text-blue-600 border border-blue-600 rounded-full px-4 py-1 sm:py-1.5 sm:text-sm text-base w-full sm:w-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L8.25 18.75H4.5v-3.75L16.862 4.487z" />
+        </svg>
+        Modify plan details
+      </button>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+      <!-- Left Section -->
+<div class="col-span-1 bg-white p-4 rounded-xl border border-blue-500 shadow-sm relative">
+  <!-- Top Ribbon -->
+  <div class="absolute -top-3 left-4 bg-gradient-to-r from-orange-400 to-orange-500 text-white text-sm px-4 py-1 rounded-full shadow flex items-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.75L14.5 10h5.25L15.75 14l2.75 5.25L12 16.5 5.5 19.25 8.25 14 3 10h5.25L12 4.75z" />
+    </svg>
+    40 Yr policy term till Age of 75
+  </div>
+
+  <!-- Life Cover -->
+  <div class="flex items-center justify-center mt-6 mb-4">
+    <button class="bg-blue-100 text-blue-600 w-8 h-8 rounded-full text-lg font-bold">-</button>
+    <div class="mx-4 text-center">
+      <div class="text-xs text-gray-500">Life cover (₹)</div>
+      <div class="text-xl font-semibold">1,00,00,000</div>
+    </div>
+    <button class="bg-blue-100 text-blue-600 w-8 h-8 rounded-full text-lg font-bold">+</button>
+  </div>
+
+  <!-- Coverage Buttons -->
+  <div class="flex justify-center gap-2 mb-4">
+    <button class="text-blue-600 border border-blue-600 rounded-full px-3 py-1 text-sm font-medium">25L</button>
+    <button class=" text-blue-600 border border-blue-600 rounded-full px-3 py-1 text-sm font-medium">50L</button>
+    <button class=" text-blue-600 border border-blue-600 rounded-full px-3 py-1 text-sm font-medium">75L</button>
+    <button class="bg-blue-100 text-blue-600 border border-blue-600 rounded-full px-3 py-1 text-sm font-medium">1 Cr</button>
+    <button class=" text-blue-600 border border-blue-600 rounded-full px-3 py-1 text-sm font-medium">5 Cr</button>
+  </div>
+
+  <!-- Benefit Riders -->
+  <div class="bg-blue-50 p-4 rounded-lg">
+    <div class="flex items-center mb-3 text-blue-700 font-semibold text-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11M9 21V6a3 3 0 00-6 0v6a3 3 0 006 0" />
+      </svg>
+      Add benefit riders
+    </div>
+
+    <!-- Riders List -->
+<div class="space-y-3">
+  <!-- Rider 1: Accidental permanent total/ partial disability -->
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-2 text-sm text-gray-700">
+      <!-- Blue Injury Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12h2a3 3 0 010 6h-2v-6zM9 12H7a3 3 0 000 6h2v-6zM9 6a3 3 0 013-3 3 3 0 013 3v6H9V6z" />
+      </svg>
+      Accidental permanent total/ partial disability
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="text-yellow-600 text-sm font-semibold">₹249/m</span>
+      <button class="text-blue-600 border border-blue-600 rounded-full px-3 py-0.5 text-sm">+ Add</button>
+    </div>
+  </div>
+
+  <!-- Rider 2: New critical illness -->
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-2 text-sm text-gray-700">
+      <!-- Blue Heartbeat Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 13h2l2 3 2-6 2 6 2-3h6" />
+      </svg>
+      New critical illness
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="text-yellow-600 text-sm font-semibold">₹249/m</span>
+      <button class="text-blue-600 border border-blue-600 rounded-full px-3 py-0.5 text-sm">+ Add</button>
+    </div>
+  </div>
+
+  <!-- Rider 3: Accidental death -->
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-2 text-sm text-gray-700">
+      <!-- Blue Cross Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 10h-4V6h-4v4H6v4h4v4h4v-4h4v-4z" />
+      </svg>
+      Accidental death
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="text-yellow-600 text-sm font-semibold">₹249/m</span>
+      <button class="text-blue-600 border border-blue-600 rounded-full px-3 py-0.5 text-sm">+ Add</button>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <!-- Update Premium Button -->
+  <button class="mt-5 w-full bg-gray-200 text-gray-500 py-2 rounded-lg text-sm flex justify-center items-center gap-2 " >
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v6h6M20 20v-6h-6M5 19a9 9 0 0114-7.5M19 5a9 9 0 00-14 7.5" />
+    </svg>
+    Update premium
+  </button>
+</div>
+
+     <!-- Middle Section -->
+<div class="col-span-2">
+  <div class="bg-white p-4 rounded-lg shadow border">
+    <!-- Header Row -->
+    <div class="flex justify-between items-center mb-4">
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 15v-2h2v2h-2zm0-4V7h2v6h-2z" />
+        </svg>
+        <h3 class="font-semibold text-blue-900">YOUR PREMIUM</h3>
+      </div>
+
+      <select class="border rounded px-2 py-1 text-sm">
+        <option>Annually</option>
+        <option>Monthly</option>
+        <option>Quarterly</option>
+      </select>
+    </div>
+
+    <!-- Section Title -->
+    <p class="text-sm text-gray-700 font-semibold mb-3">Smart recommendations</p>
+
+    <!-- Plans List -->
+    <div class="space-y-3">
+      <label class="flex justify-between items-center p-4 border rounded-lg bg-white hover:border-blue-300">
+        <div class="flex items-center gap-2">
+          <input type="radio" name="plan" class="text-blue-600 focus:ring-0" />
+          <span class="font-semibold text-gray-900">Pay for 05 years</span>
+          <span class="text-xs text-blue-600 px-2 py-0.5 rounded-full bg-blue-100">Save ₹3.66 Lakhs</span>
+        </div>
+        <div class="text-right text-sm">
+          <p class="font-semibold text-gray-800">₹62,124 <span class="text-xs text-gray-500">/Year</span></p>
+          <p class="text-xs text-blue-600 font-semibold">Total: ₹4,66,340</p>
+        </div>
+      </label>
+      <!-- Selected Plan -->
+      <label class="flex justify-between items-center p-4 border border-blue-500 rounded-lg bg-blue-50">
+        <div class="flex items-center gap-2">
+          <input type="radio" name="plan" checked class="text-blue-600 focus:ring-0" />
+          <span class="font-semibold text-blue-900">Pay for 10 years</span>
+          <span class="text-xs text-white bg-green-600 px-2 py-0.5 rounded-full">Save ₹3.14 Lakhs</span>
+        </div>
+        <div class="text-right text-sm">
+          <p class="font-semibold text-gray-800">₹46,768 <span class="text-xs text-gray-500">/Year</span></p>
+          <p class="text-xs text-blue-600 font-semibold">Total: ₹4,98,110</p>
+        </div>
+      </label>
+
+      <!-- Other Options -->
+      
+
+      <label class="flex justify-between items-center p-4 border rounded-lg bg-white hover:border-blue-300">
+        <div class="flex items-center gap-2">
+          <input type="radio" name="plan" class="text-blue-600 focus:ring-0" />
+          <span class="font-semibold text-gray-900">Pay for 15 years</span>
+          <span class="text-xs text-blue-600 px-2 py-0.5 rounded-full bg-blue-100">Save ₹2.85 Lakhs</span>
+        </div>
+        <div class="text-right text-sm">
+          <p class="font-semibold text-gray-800">₹33,894 <span class="text-xs text-gray-500">/Year</span></p>
+          <p class="text-xs text-blue-600 font-semibold">Total: ₹5,08,340</p>
+        </div>
+      </label>
+
+      <label class="flex justify-between items-center p-4 border rounded-lg bg-white hover:border-blue-300">
+        <div class="flex items-center gap-2">
+          <input type="radio" name="plan" class="text-blue-600 focus:ring-0" />
+          <span class="font-semibold text-gray-900">Pay for 20 years</span>
+          <span class="text-xs text-blue-600 px-2 py-0.5 rounded-full bg-blue-100">Save ₹2.29 Lakhs</span>
+        </div>
+        <div class="text-right text-sm">
+          <p class="font-semibold text-gray-800">₹27,984 <span class="text-xs text-gray-500">/Year</span></p>
+          <p class="text-xs text-blue-600 font-semibold">Total: ₹5,43,670</p>
+        </div>
+      </label>
+
+      <label class="flex justify-between items-center p-4 border rounded-lg bg-white hover:border-blue-300">
+        <div class="flex items-center gap-2">
+          <input type="radio" name="plan" class="text-blue-600 focus:ring-0" />
+          <span class="font-semibold text-gray-900">Pay for 25 years</span>
+          <span class="text-xs text-blue-600 px-2 py-0.5 rounded-full bg-blue-100">Save ₹1.91 Lakhs</span>
+        </div>
+        <div class="text-right text-sm">
+          <p class="font-semibold text-gray-800">₹23,971 <span class="text-xs text-gray-500">/Year</span></p>
+          <p class="text-xs text-blue-600 font-semibold">Total: ₹5,76,340</p>
+        </div>
+      </label>
+    </div>
+
+    <!-- Regular Pay Section -->
+    <p class="text-sm text-gray-700 font-semibold mt-6">Regular pay <span class="text-gray-500 font-normal">(Up to 65 years of your age)</span></p>
+
+    <label class="flex justify-between items-center p-4 border rounded-lg bg-white hover:border-blue-300 mt-2">
+      <div class="flex items-center gap-2">
+        <input type="radio" name="plan" class="text-blue-600 focus:ring-0" />
+        <span class="font-semibold text-gray-900">Pay for 30 years</span>
+      </div>
+      <div class="text-right text-sm">
+        <p class="font-semibold text-gray-800">₹16,074 <span class="text-xs text-gray-500">/Year</span></p>
+        <p class="text-xs text-blue-600 font-semibold">Total: ₹6,43,340</p>
+      </div>
+    </label>
+  </div>
+</div>
+</div>
+
+ <!-- Discounts Section -->
+<div class="mt-6 sm:ml-80 px-4">
+  <!-- Wrapper with top blue border -->
+  <div class="rounded-lg border border-gray-200 overflow-hidden relative">
+    <!-- Blue Top Border Line -->
+    <div class="h-1 bg-blue-800 rounded-t"></div>
+
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 p-4 bg-white">
+      <div>
+        <div class="flex items-center gap-2 text-blue-800 font-semibold mb-2">
+          <!-- Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 17.5c-.83 0-1.5-.67-1.5-1.5S11.17 16.5 12 16.5s1.5.67 1.5 1.5S12.83 19.5 12 19.5zm1-4.5h-2v-6h2v6z"/>
+          </svg>
+          <h4 class="font-semibold text-blue-900">Available discounts <span class="text-gray-600 font-normal">(2)</span></h4>
+        </div>
+
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="flex items-center bg-blue-600 text-white px-3 py-1 rounded-full">
+            <!-- Badge icon -->
+            <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.54 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/>
+            </svg>
+            Partner: 5% ✕
+          </span>
+          <span class="flex items-center bg-blue-600 text-white px-3 py-1 rounded-full">
+            <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.54 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/>
+            </svg>
+            Worksite markup: 5% ✕
+          </span>
+        </div>
+      </div>
+
+      <!-- Decorative Icon -->
+      <div>
+        <img src="https://img.icons8.com/color/48/discount.png" alt="discount" class="w-10 h-10 opacity-20" />
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<!-- Story Box -->
+<div class="mt-4 sm:ml-80 px-4">
+  <div class="bg-blue-50 border border-blue-100 rounded-lg px-4 py-3 max-w-full sm:max-w-2xl">
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3">
+      <!-- Icon & Text -->
+      <div class="flex gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-600 mt-1" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2a10 10 0 00-3.516 19.39c.555.102.758-.241.758-.536v-1.868c-3.09.672-3.741-1.49-3.741-1.49a2.946 2.946 0 00-1.236-1.624c-1.01-.69.077-.676.077-.676a2.326 2.326 0 011.693 1.141 2.36 2.36 0 003.223.924 2.353 2.353 0 01.701-1.479c-2.467-.281-5.063-1.234-5.063-5.493a4.284 4.284 0 011.139-2.97 3.974 3.974 0 01.111-2.927s.93-.297 3.053 1.133a10.52 10.52 0 015.556 0c2.121-1.43 3.05-1.133 3.05-1.133a3.97 3.97 0 01.112 2.927 4.284 4.284 0 011.137 2.97c0 4.272-2.6 5.21-5.074 5.485a2.655 2.655 0 01.754 2.064v3.063c0 .298.2.643.765.534A10.001 10.001 0 0012 2z" />
+        </svg>
+        <p class="text-sm text-gray-700">
+          <span class="font-semibold text-blue-900">Story:</span><br>
+          By paying ₹50,000 annually for 10 years (₹5,00,000 total), you could receive around ₹15–20 lakhs after 30 years, depending on the returns.
+        </p>
+      </div>
+
+      <!-- Copy link -->
+      <button class="text-sm text-blue-600 hover:underline flex items-center gap-1 mt-2 sm:mt-0">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16h8m-4-4v8m4-16H8a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V6a2 2 0 00-2-2z" />
+        </svg>
+        Copy story
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="flex items-center justify-between mt-6 bg-blue-100 p-4 rounded-lg border border-blue-500">
+  <!-- Left Content -->
+  <div class="flex items-center gap-3">
+    <!-- Icon -->
+    <img src="https://img.icons8.com/color/48/money-bag.png" class="w-10 h-10" alt="premium icon" />
+    
+    <!-- Text -->
+    <div>
+      <h4 class="text-sm font-semibold text-gray-800">Your Premium</h4>
+      <p class="text-xl font-bold text-blue-900">
+        ₹94,500 <span class="text-sm font-normal text-gray-600">/ Yr (Excl. of GST)</span>
+      </p>
+      <a href="#" class="text-sm text-blue-600 hover:underline">View details</a>
+    </div>
+  </div>
+
+  <!-- Right Buttons -->
+  <div class="flex items-center gap-3">
+    <button class="flex items-center gap-1 px-4 py-2 border border-blue-600 text-blue-600 rounded-full text-sm hover:bg-blue-50 transition">
+      <!-- Share Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12v-2m0 0a4 4 0 014-4h10a4 4 0 014 4v2m-4 4H8m-4-4h16" />
+      </svg>
+      Share BI
+    </button>
+    <button class="flex items-center gap-1 px-4 py-2 border border-blue-600 text-blue-600 rounded-full text-sm hover:bg-blue-50 transition">
+      <!-- Download Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2m-4-4l-4 4m0 0l-4-4m4 4V4" />
+      </svg>
+      Download BI
+    </button>
+  </div>
+</div>
+</body>
+</html>
